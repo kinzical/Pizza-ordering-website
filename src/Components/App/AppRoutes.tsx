@@ -1,9 +1,9 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-import { Auth } from "../src/Components/Modules/Auth/Auth";
+import { Auth } from "../../Components/App/Modules/Auth/Auth";
 //import { PrivateRoute } from "./modules/shared/containers/PrivateRoute";
-import { Dashboard } from "./Components/Modules/Dashboard/Dashboard"
-import { PageNotFound } from "./Components/Modules/Shared/Presentations/PageNotFound/PageNotFound";
+import { Dashboard } from "../../Components/App/Modules/Dashboard/Dashboard"
+import { PageNotFound } from "../../Components/App/Modules/Shared/Presentations/PageNotFound/PageNotFound";
 
 export const AppRoutes = () => {
   return (
