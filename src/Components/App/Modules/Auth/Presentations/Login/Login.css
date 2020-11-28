@@ -1,0 +1,36 @@
+.login-page {
+    position: relative;
+    height: 82vh;
+    width: 100%;
+    overflow: hidden; 
+    background-color:#f0f5f5;
+}
+.app-icon {
+    background: url(./../../../../../../assests/images/pizza-login-img.jpg) no-repeat;
+    display: block; 
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+}
+.login-container {
+    position: absolute;
+    font-size: 20px;
+    width: 600px;
+    top:15%;
+    left:72%;
+}
+Input{
+    font-size: medium;
+}
+h1{
+    color:#000080;
+}
+Button{
+    color:white;
+    background-color:#0000ff;
+    padding: 6px 8px;
+    font-size: medium;
+    width: 90px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
