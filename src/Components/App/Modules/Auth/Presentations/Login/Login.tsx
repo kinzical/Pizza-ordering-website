@@ -2,11 +2,14 @@ import { Button } from "antd"
 import Checkbox from "antd/lib/checkbox"
 import Form from "antd/lib/form"
 import Input from "antd/lib/input"
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import '../Login/Login.css'
+import { User } from '../../../Shared/Models/interfaces/User'
 
 export const Login = () => {
+    const [users, setUsers] = useState<User[]>([])
+
     return (
         <div className="login-page">
             <div className="app-icon"></div>
