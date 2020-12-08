@@ -5,54 +5,26 @@ import Input from "antd/lib/input"
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import '../Login/Login.css'
-import { User } from '../../../Shared/Models/interfaces/User'
+import { User } from '../../../Shared/models/interfaces/User'
 
 export const Login = () => {
     const [users, setUsers] = useState<User[]>([])
-
     return (
-        <div className="login-page">
-            <div className="app-icon"></div>
-            <div className="login-container">
-            <h1>Login or Sign Up</h1>
-                <Form>
-                    <Form.Item
-                        label="Email"
-                        name="email"
-                        rules={[
-                            {
-                                required: true,
-                                message: "Please enter email",
-                            },
-                        ]}
-                    >
-                        <Input type="email" />
-                    </Form.Item>
-                    <Form.Item
-                        label="Password"
-                        name="password"
-                        rules={[
-                            {
-                                required: true,
-                                message: "Please enter password",
-                            },
-                        ]}
-                    >
-                        <Input.Password />
-                    </Form.Item>
-                    {/* <Form.Item name="remember" valuePropName="checked">
-                        <Checkbox>Remember Me</Checkbox>
-                    </Form.Item> */}
-                    <Form.Item>
-                        <Link to={'forgot-password'} className="pull-right">Forgot Password?</Link>
-                    </Form.Item>
-                    <Form.Item>
-                        <Button type="primary" htmlType="submit">
-                            Login
-                        </Button>
-                    </Form.Item>
-                    <p>Don't have an account?<Link to={'login'}>Login</Link></p>
-                </Form>
+        <div className="wrapper fadeInDown">
+            <div id="formContent">  
+                <div className="fadeIn first">
+                    <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+                </div>
+                
+                <form>
+                    <input type="text" id="login" className="fadeIn second" name="login" placeholder="login" />
+                    <input type="text" id="password" className="fadeIn third" name="login" placeholder="password" />
+                    <input type="submit" className="fadeIn fourth" value="Log In" />
+                </form>
+        
+                <div id="formFooter">
+                    <a className="underlineHover" href="#">Forgot Password?</a>
+                </div>
             </div>
         </div>
     )

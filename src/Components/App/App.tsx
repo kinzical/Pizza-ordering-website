@@ -6,9 +6,9 @@ import { Header } from './Modules/Shared/Presentations/Header/Header';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
         <AppRoutes />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
