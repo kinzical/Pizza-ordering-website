@@ -1,5 +1,5 @@
 import http from '../http-common'
-import { User } from '../models/interfaces/User'
+import { User } from '../Models/interfaces/User'
 
 const getAll = () => {
     return http.get("/users");

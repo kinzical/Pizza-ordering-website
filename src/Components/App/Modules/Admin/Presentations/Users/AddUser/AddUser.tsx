@@ -1,6 +1,6 @@
 import Form from "antd/lib/form/Form";
 import React, { useState } from "react";
-import { User } from "../../../../Shared/models/interfaces/User";
+import { User } from "../../../../Shared/Models/interfaces/User";
 import UserDataService from "../../../../Shared/services/http-common-services";
 
 const AddUser = () => {

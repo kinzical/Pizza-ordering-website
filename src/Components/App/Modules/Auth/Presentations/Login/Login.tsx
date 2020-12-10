@@ -5,7 +5,7 @@ import Input from "antd/lib/input"
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import '../Login/Login.css'
-import { User } from '../../../Shared/models/interfaces/User'
+import { User } from '../../../Shared/Models/interfaces/User'
 
 export const Login = () => {
     const [users, setUsers] = useState<User[]>([])
